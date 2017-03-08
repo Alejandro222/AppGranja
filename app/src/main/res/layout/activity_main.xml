@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.alejandro.migranja.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Granja de Pollos"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:id="@+id/textView" />
+
+    <Button
+        android:text="Ingreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="91dp"
+        android:id="@+id/btnIngreso"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:fontFamily="sans-serif" />
+
+    <Button
+        android:text="Salida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSalida"
+        android:layout_alignBaseline="@+id/btnVitamina"
+        android:layout_alignBottom="@+id/btnVitamina"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Vitamina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnVitamina"
+        android:layout_alignBaseline="@+id/btnIngreso"
+        android:layout_alignBottom="@+id/btnIngreso"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Mostrar Grupos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMostrar"
+        android:layout_below="@+id/btnSalida"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/pollo"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/btnMostrar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp" />
+
+</RelativeLayout>
